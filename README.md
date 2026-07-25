@@ -55,8 +55,9 @@ Home Tab
 <img width="1329" height="565" alt="image" src="https://github.com/user-attachments/assets/5e8b0cfa-bad3-4d78-9a68-7ec8f3026ad1" />
 
 ### 2. Automation (Flow Builder)
-![Flow Screenshot](link-to-your-image.png)
-*Explain what triggers the flow and what actions it takes.*
+
+<img width="1095" height="541" alt="image" src="https://github.com/user-attachments/assets/8ea49d72-b4ca-4eb0-9ad7-51593ccb033c" />
+
 
 ### 3. User Experience & Security
 ![Lightning Page Screenshot](link-to-your-image.png)
