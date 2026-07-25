@@ -53,8 +53,12 @@ This project allowed me to apply core Salesforce Administrator concepts in a pra
 ## 📸 System Walkthrough & Visuals
 *Provide proof here. Embed your screenshots or GIFs directly.*
 ### 1. Data Architecture (Schema Builder)
-![Schema Builder Screenshot](link-to-your-image.png)
-*Briefly explain the relationships (e.g., Master-Detail between Account and Property).*
+<img width="940" height="443" alt="image" src="https://github.com/user-attachments/assets/a6c5794d-7d0d-4dbc-82e1-a6e3edcc6c23" />
+The project is built around four main custom objects:
+	Employee, 
+ Technician, 
+	IT Asset,
+	Service Request 
 
 ### 2. Automation (Flow Builder)
 ![Flow Screenshot](link-to-your-image.png)
