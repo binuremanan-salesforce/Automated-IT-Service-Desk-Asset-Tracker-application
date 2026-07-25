@@ -1,72 +1,75 @@
-# Automated IT Service Desk & Asset Tracker
+# ⚙️ Automation
 
-## 📌 Project Overview
+To make the IT Service Desk more efficient, I used **Salesforce Flow** to automate several business processes. These automations reduce manual work, improve data consistency, and ensure support requests are handled quickly and accurately.
 
-As part of my Salesforce Administrator learning, I wanted to build a project that reflects a real business scenario rather than just completing Trailhead exercises. That's why I developed the Automated IT Service Desk & Asset Tracker using a Salesforce Developer Edition.
+---
 
-The application helps an organisation manage its IT assets and employee support requests in one place. Employees can raise service requests for issues such as hardware problems, software installation, network connectivity, or access requests. Each request is linked to the employee and, where applicable, the IT asset they are using.
+<img width="1007" height="573" alt="image" src="https://github.com/user-attachments/assets/1dd3d287-c3fa-4de8-8c23-002319008d02" />
 
-To reduce manual work, I implemented several automations using Salesforce Flow. When a service request is created, the system automatically assigns a technician, calculates the SLA due date based on the ticket priority, and sends email notifications to keep everyone informed. I also created a scheduled flow that checks for overdue requests each day and sends reminder emails to technicians so that important tickets are not missed.
+## 👨‍💻 Automatic Technician Assignment
 
-To make the application secure, I configured roles, permission sets, and sharing rules so users only have access to the records they need. I also built reports and dashboards that allow managers to monitor open tickets, technician workload, SLA compliance, and IT asset allocation.
+When a new Service Request is created, the system automatically assigns a technician. This eliminates the need for manual assignment and ensures that every request is allocated to the appropriate technician as soon as it is logged.
 
-The entire application was built using Salesforce's declarative tools without writing Apex code. Through this project, I gained hands-on experience with custom objects, relationships, validation rules, formula fields, Flows, Lightning App Builder, reports, dashboards, and security configuration. It has been a great way to apply my Salesforce knowledge in a practical project, and it demonstrates the skills I can bring to a Salesforce Administrator role
+**Business Benefit:**
+- Reduces manual effort.
+- Ensures requests are assigned immediately.
+- Improves response times.
 
-* **Role:** Salesforce Administrator (Solo Project)
-* **Environment:** Free Developer Edition Org
+---
+<img width="1180" height="523" alt="image" src="https://github.com/user-attachments/assets/956e434c-51b2-4baf-aec4-dfad7a7b278a" />
 
-## 💼 The Business Problem
- I chose to build this project because many organisations still struggle with managing IT support requests and company assets efficiently. In a typical workplace, employees often report IT issues through emails, phone calls, or spreadsheets. This makes it difficult to track requests, assign them to the right technician, monitor progress, and ensure issues are resolved on time. Important requests can easily be missed, and managers have very little visibility into the team's workload or SLA performance.
+## 📅 Automatic SLA Due Date Calculation
 
-Another common challenge is asset management. Without a central system, it's hard to know which employee has been assigned a particular laptop, desktop, or other IT equipment, making it difficult to manage inventory and warranty information.
+The SLA Due Date is calculated automatically based on the priority of the service request. For example, Critical and High priority requests receive shorter response times than Medium or Low priority requests.
 
-I designed this Salesforce application to solve these problems by bringing everything into one place. Employees can easily log support requests, technicians can track and update their assigned tickets, and managers can monitor performance through reports and dashboards. By automating tasks such as technician assignment, SLA calculations, and email notifications, the system reduces manual effort, improves response times, and helps the IT team deliver a more organised and efficient support service.
+**Business Benefit:**
+- Standardises SLA calculations.
+- Helps technicians prioritise their work.
+- Supports SLA compliance.
 
-This version sounds like you're explaining the business problem you identified and how your solution addresses it, which is exactly what interviewers and recruiters want to hear.
+---
+<img width="702" height="514" alt="image" src="https://github.com/user-attachments/assets/e922826f-7fe0-4bd8-a0b6-58997019f7e0" />
 
-## 🛠️ The Solution
+## 📧 Automated Email Notifications
 
-To solve these challenges, I built a custom Salesforce application using declarative tools. The solution centralises IT support requests and asset management while automating repetitive tasks to improve efficiency and data accuracy.
+When a Service Request is created, the system automatically sends email notifications. The assigned technician receives the details of the new ticket, while the employee receives a confirmation that their request has been successfully submitted.
 
- ## Custom Data Model
+**Business Benefit:**
+- Keeps everyone informed.
+- Reduces manual communication.
+- Improves the overall support experience.
 
-I designed a custom data model using four main objects: Employee, IT Asset, Technician, and Service Request. These objects are connected using Lookup relationships, allowing each service request to be linked to the employee who raised it, the assigned IT asset, and the technician responsible for resolving the issue. This structure provides a clear and organised way to manage support requests and company assets.
+---
+<img width="717" height="519" alt="image" src="https://github.com/user-attachments/assets/e5403984-2f01-41db-9008-2d026384df10" />
 
- ## Process Automation
+## ⏰ Scheduled Flow – Daily SLA Reminder
 
-I used Salesforce Flow to automate key business processes. When a new service request is created, the system automatically assigns a technician, calculates the SLA due date based on the ticket priority, and sends email notifications to both the employee and technician. I also built a scheduled flow that runs daily to identify overdue service requests and send reminder emails, helping the IT team meet SLA targets without manual follow-up.
+I created a **Scheduled Flow** that runs automatically every day to check for service requests that have exceeded their SLA Due Date and are still open. If any overdue requests are found, the flow sends reminder emails to the assigned technicians, helping them prioritise unresolved tickets before they become a bigger issue.
 
- ## Data Quality
+**Business Benefit:**
+- Automatically monitors overdue service requests.
+- Helps technicians stay on top of pending work.
+- Improves SLA compliance and service delivery.
+- Eliminates the need for manual follow-up.
 
-To maintain accurate and reliable data, I implemented validation rules, required fields, and formula fields. These prevent incomplete or incorrect information from being saved, ensure mandatory details are provided when creating service requests, and automatically calculate values such as ticket age and SLA status. I also customised page layouts and Dynamic Forms so users only see fields relevant to their role and the current stage of the support process.
+---
+<img width="567" height="500" alt="image" src="https://github.com/user-attachments/assets/d21fd351-a137-4662-96d9-6215fcb02114" />
 
- ## Security
 
-I configured roles, permission sets, profiles, and sharing rules to ensure users only have access to the records and features appropriate for their role. Employees can view and manage their own service requests, technicians can update the tickets assigned to them, and managers have broader visibility through reports and dashboards.
+## 🖥️ Screen Flow – Guided Service Request Creation
 
- ## Reporting and Dashboards
+To make it easier for employees to submit IT support requests, I built a **Screen Flow** that provides a simple, step-by-step process for creating a new Service Request. Instead of using the standard Salesforce record page, users are guided through the required information, making the process more user-friendly and reducing data entry errors.
 
-I created custom reports and dashboards to provide real-time insights into IT operations, including open and closed tickets, technician workload, SLA compliance, and IT asset allocation. These dashboards help managers monitor team performance and identify areas that need attention.
+The Screen Flow captures information such as the employee, issue details, priority, category, and related IT asset before automatically creating the Service Request.
 
-This project allowed me to apply core Salesforce Administrator concepts in a practical business scenario and demonstrates my ability to design, automate, secure, and maintain a complete Salesforce solution using declarative tools.
+**Business Benefit:**
+- Provides a simple and intuitive user experience.
+- Ensures all required information is collected.
+- Reduces incomplete or inaccurate service requests.
+- Demonstrates how Screen Flows can be used to build guided business processes.
 
-## 📸 System Walkthrough & Visuals
-Home Tab
-<img width="1329" height="565" alt="image" src="https://github.com/user-attachments/assets/5e8b0cfa-bad3-4d78-9a68-7ec8f3026ad1" />
+---
 
-### 2. Automation (Flow Builder)
-![Flow Screenshot](link-to-your-image.png)
-*Explain what triggers the flow and what actions it takes.*
+## 🚀 Summary
 
-### 3. User Experience & Security
-![Lightning Page Screenshot](link-to-your-image.png)
-*Show your Dynamic Forms or how you used Permission Sets to hide fields.*
-
-### 4. Analytics & Insights
-![Dashboard Screenshot](link-to-your-image.png)
-*Show the dashboard you built for management.*
-
-## 🚀 Key Business Impact
-What are the results of your work? (Use realistic metrics).
-* **Efficiency:** Cut lead conversion time by 30% via automated tasks.
-* **Data Accuracy:** Stopped missing phone numbers using validation rules.
+All automation in this project was built using Salesforce's declarative tools, without writing Apex code. By using **Record-Triggered Flows**, **Scheduled Flows**, and a **Screen Flow**, I was able to automate key business processes, improve data accuracy, reduce manual effort, and create a more efficient IT Service Desk application.
