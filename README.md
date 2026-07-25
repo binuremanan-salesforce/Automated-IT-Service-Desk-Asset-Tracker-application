@@ -1,5 +1,7 @@
 ## 📊 Data Model
 
+<img width="940" height="443" alt="image" src="https://github.com/user-attachments/assets/a6c5794d-7d0d-4dbc-82e1-a6e3edcc6c23" />
+
 The project is built around four main custom objects:
 
 - 👤 Employee
