@@ -1,4 +1,4 @@
-Project Overview
+##Project Overview
 
 As part of my Salesforce Administrator learning journey, I developed the Automated IT Service Desk & Asset Tracker in a Salesforce Developer Edition to gain practical, hands-on experience with real-world business processes.
 
