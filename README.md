@@ -1,3 +1,5 @@
+Project Overview
+
 As part of my Salesforce Administrator learning journey, I developed the Automated IT Service Desk & Asset Tracker in a Salesforce Developer Edition to gain practical, hands-on experience with real-world business processes.
 
 The idea behind this project was to create a system that helps an organisation manage its IT assets and support requests in one place. Employees can log IT issues such as hardware problems, software installation requests, network issues, or access requests, while technicians can manage, track, and resolve these requests efficiently. At the same time, the organisation can keep track of IT assets assigned to employees, including computers, laptops, printers, and other equipment.
