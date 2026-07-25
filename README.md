@@ -51,14 +51,8 @@ I created custom reports and dashboards to provide real-time insights into IT op
 This project allowed me to apply core Salesforce Administrator concepts in a practical business scenario and demonstrates my ability to design, automate, secure, and maintain a complete Salesforce solution using declarative tools.
 
 ## 📸 System Walkthrough & Visuals
-*Provide proof here. Embed your screenshots or GIFs directly.*
-### 1. Data Architecture (Schema Builder)
-<img width="940" height="443" alt="image" src="https://github.com/user-attachments/assets/a6c5794d-7d0d-4dbc-82e1-a6e3edcc6c23" />
-The project is built around four main custom objects:
-	Employee, 
- Technician, 
-	IT Asset,
-	Service Request 
+Home Tab
+<img width="1329" height="565" alt="image" src="https://github.com/user-attachments/assets/5e8b0cfa-bad3-4d78-9a68-7ec8f3026ad1" />
 
 ### 2. Automation (Flow Builder)
 ![Flow Screenshot](link-to-your-image.png)
