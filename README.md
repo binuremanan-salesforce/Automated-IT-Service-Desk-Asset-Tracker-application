@@ -18,10 +18,13 @@ I created custom Lightning Record Pages for the main objects to display the most
 - Reduces the time required to update records.
 
 ---
+Service Request record page
+<img width="1328" height="558" alt="image" src="https://github.com/user-attachments/assets/1e79800e-d9f4-4d8b-b33b-b795a7c9c424" />
 
 ## 📋 Dynamic Forms
 
-I used Dynamic Forms to display fields based on the current stage of a Service Request. Users only see the information that is relevant to them, making the page cleaner and easier to understand.
+I used Dynamic Forms to display fields based on the current stage of a Service Request. Users only see the information that is relevant +
+3to them, making the page cleaner and easier to understand.
 
 **Business Benefit:**
 - Reduces page clutter.
@@ -33,6 +36,8 @@ I used Dynamic Forms to display fields based on the current stage of a Service R
 ## ⚡ Dynamic Actions
 
 Dynamic Actions were added to display actions only when they are needed. For example, technicians only see actions that are relevant to the current status of a Service Request.
+
+<img width="1349" height="558" alt="image" src="https://github.com/user-attachments/assets/94ab21d1-e4a1-41ab-9baf-baaf1ce4af95" />
 
 **Business Benefit:**
 - Simplifies the user interface.
@@ -49,6 +54,8 @@ I added a Path Component to the Service Request record page so users can easily 
 - Provides a clear visual representation of the ticket lifecycle.
 - Encourages consistent business processes.
 - Helps users update records correctly.
+
+<img width="1289" height="539" alt="image" src="https://github.com/user-attachments/assets/46d6acf7-c234-443d-bb25-5a49ea4c222b" />
 
 ---
 
@@ -94,10 +101,13 @@ Permission Sets were created to provide additional permissions without modifying
 
 A Role Hierarchy was configured to reflect the organisation's reporting structure. Managers can view records owned by their team members, while employees only have access to their own records.
 
+
 **Business Benefit:**
 - Supports management reporting.
 - Provides controlled record visibility.
 - Mirrors a real business structure.
+
+<img width="1097" height="507" alt="image" src="https://github.com/user-attachments/assets/1e8f4573-832d-4169-a80f-087da2cb741c" />
 
 ---
 
@@ -109,6 +119,7 @@ Sharing Rules were used to extend record access where required. For example, tec
 - Enables collaboration.
 - Maintains data security.
 - Ensures users only access relevant records.
+<img width="1331" height="490" alt="image" src="https://github.com/user-attachments/assets/d4192472-7e5b-4521-a0f0-6d3966a32842" />
 
 ---
 
