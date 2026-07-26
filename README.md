@@ -51,19 +51,26 @@ I created custom reports and dashboards to provide real-time insights into IT op
 This project allowed me to apply core Salesforce Administrator concepts in a practical business scenario and demonstrates my ability to design, automate, secure, and maintain a complete Salesforce solution using declarative tools.
 
 ## 📸 System Walkthrough & Visuals
+
 Home Tab
+
 <img width="1329" height="565" alt="image" src="https://github.com/user-attachments/assets/5e8b0cfa-bad3-4d78-9a68-7ec8f3026ad1" />
 
 ### 2. Automation (Flow Builder)
+
+Flow Builder
 
 <img width="1095" height="541" alt="image" src="https://github.com/user-attachments/assets/8ea49d72-b4ca-4eb0-9ad7-51593ccb033c" />
 
 
 ### 3. User Experience & Security
-![Lightning Page Screenshot](link-to-your-image.png)
-*Show your Dynamic Forms or how you used Permission Sets to hide fields.*
+
+Service Request record page
+
+<img width="1328" height="558" alt="image" src="https://github.com/user-attachments/assets/2eb82f1d-7cb5-49a0-8dfa-069d7e42c9dd" />
 
 ### 4. Analytics & Insights
+
 ![Dashboard Screenshot](link-to-your-image.png)
 *Show the dashboard you built for management.*
 
