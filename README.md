@@ -1,136 +1,134 @@
-# Automated IT Service Desk & Asset Tracker
+# 📊 Reports & Dashboards
 
-## 📌 Project Overview
+To help managers monitor the performance of the IT Service Desk, I created a set of reports and dashboards that provide real-time visibility into support requests, technician workload, SLA performance, and IT asset allocation.
 
-As part of my Salesforce Administrator learning, I wanted to build a project that reflects a real business scenario rather than just completing Trailhead exercises. That's why I developed the Automated IT Service Desk & Asset Tracker using a Salesforce Developer Edition.
-
-The application helps an organisation manage its IT assets and employee support requests in one place. Employees can raise service requests for issues such as hardware problems, software installation, network connectivity, or access requests. Each request is linked to the employee and, where applicable, the IT asset they are using.
-
-To reduce manual work, I implemented several automations using Salesforce Flow. When a service request is created, the system automatically assigns a technician, calculates the SLA due date based on the ticket priority, and sends email notifications to keep everyone informed. I also created a scheduled flow that checks for overdue requests each day and sends reminder emails to technicians so that important tickets are not missed.
-
-To make the application secure, I configured roles, permission sets, and sharing rules so users only have access to the records they need. I also built reports and dashboards that allow managers to monitor open tickets, technician workload, SLA compliance, and IT asset allocation.
-
-The entire application was built using Salesforce's declarative tools without writing Apex code. Through this project, I gained hands-on experience with custom objects, relationships, validation rules, formula fields, Flows, Lightning App Builder, reports, dashboards, and security configuration. It has been a great way to apply my Salesforce knowledge in a practical project, and it demonstrates the skills I can bring to a Salesforce Administrator role
-
-* **Role:** Salesforce Administrator (Solo Project)
-* **Environment:** Free Developer Edition Org
-
-## 💼 The Business Problem
- I chose to build this project because many organisations still struggle with managing IT support requests and company assets efficiently. In a typical workplace, employees often report IT issues through emails, phone calls, or spreadsheets. This makes it difficult to track requests, assign them to the right technician, monitor progress, and ensure issues are resolved on time. Important requests can easily be missed, and managers have very little visibility into the team's workload or SLA performance.
-
-Another common challenge is asset management. Without a central system, it's hard to know which employee has been assigned a particular laptop, desktop, or other IT equipment, making it difficult to manage inventory and warranty information.
-
-I designed this Salesforce application to solve these problems by bringing everything into one place. Employees can easily log support requests, technicians can track and update their assigned tickets, and managers can monitor performance through reports and dashboards. By automating tasks such as technician assignment, SLA calculations, and email notifications, the system reduces manual effort, improves response times, and helps the IT team deliver a more organised and efficient support service.
-
-This version sounds like you're explaining the business problem you identified and how your solution addresses it, which is exactly what interviewers and recruiters want to hear.
-
-## 🛠️ The Solution
-
-To solve these challenges, I built a custom Salesforce application using declarative tools. The solution centralises IT support requests and asset management while automating repetitive tasks to improve efficiency and data accuracy.
-
- ## Custom Data Model
-
-I designed a custom data model using four main objects: Employee, IT Asset, Technician, and Service Request. These objects are connected using Lookup relationships, allowing each service request to be linked to the employee who raised it, the assigned IT asset, and the technician responsible for resolving the issue. This structure provides a clear and organised way to manage support requests and company assets.
-
- ## Process Automation
-
-I used Salesforce Flow to automate key business processes. When a new service request is created, the system automatically assigns a technician, calculates the SLA due date based on the ticket priority, and sends email notifications to both the employee and technician. I also built a scheduled flow that runs daily to identify overdue service requests and send reminder emails, helping the IT team meet SLA targets without manual follow-up.
-
- ## Data Quality
-
-To maintain accurate and reliable data, I implemented validation rules, required fields, and formula fields. These prevent incomplete or incorrect information from being saved, ensure mandatory details are provided when creating service requests, and automatically calculate values such as ticket age and SLA status. I also customised page layouts and Dynamic Forms so users only see fields relevant to their role and the current stage of the support process.
-
- ## Security
-
-I configured roles, permission sets, profiles, and sharing rules to ensure users only have access to the records and features appropriate for their role. Employees can view and manage their own service requests, technicians can update the tickets assigned to them, and managers have broader visibility through reports and dashboards.
-
- ## Reporting and Dashboards
-
-I created custom reports and dashboards to provide real-time insights into IT operations, including open and closed tickets, technician workload, SLA compliance, and IT asset allocation. These dashboards help managers monitor team performance and identify areas that need attention.
-
-This project allowed me to apply core Salesforce Administrator concepts in a practical business scenario and demonstrates my ability to design, automate, secure, and maintain a complete Salesforce solution using declarative tools.
-
-## 1. System Walkthrough & Visuals
-
-Home Tab
-
-<img width="1329" height="565" alt="image" src="https://github.com/user-attachments/assets/5e8b0cfa-bad3-4d78-9a68-7ec8f3026ad1" />
-
-### 2. Automation (Flow Builder)
-
-Flow Builder
-
-<img width="1095" height="541" alt="image" src="https://github.com/user-attachments/assets/8ea49d72-b4ca-4eb0-9ad7-51593ccb033c" />
-
-
-### 3. User Experience & Security
-
-Service Request record page
-
-<img width="1328" height="558" alt="image" src="https://github.com/user-attachments/assets/2eb82f1d-7cb5-49a0-8dfa-069d7e42c9dd" />
-
-### 4. Reports & Dashboards
-
-Reports
-
-<img width="1210" height="530" alt="image" src="https://github.com/user-attachments/assets/e25cd01e-1f79-4604-931e-e8b07bbd1b0e" />
-
-Dashboards
-
-<img width="1354" height="562" alt="image" src="https://github.com/user-attachments/assets/5ea257ae-2a9d-4f03-99d8-932ee0b8c4ea" />
-
-### 5. Key Business Impact
-
-This project demonstrates how Salesforce can be used to improve the day-to-day operations of an IT Service Desk by replacing manual processes with an organised and automated solution.
-
-1.  Centralised IT Support
-
-Employees can raise and track their IT support requests in one place, making it easier for both employees and technicians to manage and monitor issues.
+These reports allow managers to identify issues quickly, monitor team performance, and make informed decisions based on live data.
 
 ---
 
-2. Reduced Manual Work
+# 📑 Reports
 
-Routine tasks such as technician assignment, SLA due date calculation, and email notifications are automated using Salesforce Flow. This reduces repetitive manual work and allows the IT team to focus on resolving issues more efficiently.
+## 🎫 Open Service Requests
 
----
+This report displays all service requests that are currently open, including their priority, assigned technician, and current status. It helps the IT team understand which requests still require attention.
 
-3. Improved SLA Management
-
-The system automatically calculates SLA due dates and runs a scheduled flow to identify overdue service requests. This helps technicians prioritise their workload and improves the chances of meeting service level agreements.
-
----
-
-4. Better Asset Management
-
-The application keeps a record of IT assets assigned to employees, making it easy to track equipment ownership, monitor asset history, and manage company inventory more effectively.
+**Business Benefit:**
+- Monitors pending support requests.
+- Helps prioritise daily work.
+- Improves response times.
 
 ---
 
-5. Better Visibility for Managers
+## ✅ Closed Service Requests
 
-Custom reports and dashboards provide real-time insights into open tickets, technician workload, SLA performance, and asset allocation. This enables managers to make informed decisions and identify areas that need attention.
+This report shows all completed service requests along with their resolution status and completion date. It provides an overview of completed work and helps measure team productivity.
 
----
-
-6. Secure Access to Information
-
-Roles, Permission Sets, and Sharing Rules ensure that users only have access to the records relevant to their role, protecting sensitive business information while supporting collaboration.
-
----
-
-7. Improved User Experience
-
-A guided Screen Flow, customised Lightning Record Pages, Dynamic Forms, and Quick Actions make the application simple and intuitive to use, helping users complete tasks more quickly and with fewer errors.
+**Business Benefit:**
+- Tracks completed requests.
+- Measures technician productivity.
+- Provides historical support records.
 
 ---
 
-8.  Scalable Solution
+## 👨‍💻 Service Requests by Technician
 
-The application has been designed with future enhancements in mind. New features such as approval processes, knowledge articles, service contracts, or AI-powered support can be added without changing the overall data model.
+This report groups service requests by technician, making it easy to see how work is distributed across the support team.
+
+**Business Benefit:**
+- Monitors technician workload.
+- Supports balanced task allocation.
+- Helps managers identify resource requirements.
 
 ---
 
-## Overall Impact
+## 🚨 Overdue SLA Requests
 
-By bringing together asset management, service request tracking, automation, security, and reporting into a single Salesforce application, this solution creates a more organised and efficient IT support process. It reduces manual effort, improves response times, increases data accuracy, and provides better visibility into IT operations, helping both employees and the IT team work more effectively.
+This report lists all service requests where the SLA Due Date has passed but the ticket is still open. It allows managers to quickly identify overdue requests that require immediate attention.
+
+**Business Benefit:**
+- Identifies SLA breaches.
+- Helps technicians prioritise overdue work.
+- Improves customer satisfaction.
+
+---
+
+## 💻 IT Asset Inventory
+
+This report provides a complete list of IT assets, including their assigned employee, asset type, and current status.
+
+**Business Benefit:**
+- Tracks company assets.
+- Simplifies asset management.
+- Helps maintain accurate inventory records.
+
+---
+
+# 📈 Dashboards
+
+To present important information visually, I created a dashboard that brings together key reports into one place.
+
+---
+
+## 🎫 Open vs Closed Service Requests
+
+A chart showing the number of open and closed service requests.
+
+**Business Benefit:**
+- Provides a quick overview of current workload.
+- Measures overall support performance.
+
+---
+
+## 🚦 Service Requests by Priority
+
+Displays the number of tickets by priority level, helping managers identify urgent issues.
+
+**Business Benefit:**
+- Highlights high-priority requests.
+- Supports better workload planning.
+
+---
+
+## 👨‍💻 Technician Workload
+
+Displays the number of service requests assigned to each technician.
+
+**Business Benefit:**
+- Monitors workload distribution.
+- Helps balance work across the team.
+
+---
+
+## ⏰ SLA Compliance
+
+Displays service requests that are approaching or have exceeded their SLA Due Date.
+
+**Business Benefit:**
+- Tracks SLA performance.
+- Helps reduce overdue requests.
+
+---
+
+## 💻 IT Assets by Status
+
+Displays the number of IT assets by their current status, such as Active, In Repair, or Retired.
+
+**Business Benefit:**
+- Provides visibility into company assets.
+- Supports asset lifecycle management.
+
+---
+
+# 📌 Dashboard Summary
+
+The dashboard provides managers with a real-time overview of IT support operations. Instead of reviewing multiple reports individually, they can quickly monitor ticket volumes, technician workload, SLA performance, and asset availability from a single screen.
+
+This improves decision-making, helps identify bottlenecks, and enables the IT team to respond more effectively to business needs.
+
+---
+
+# 🚀 Overall Impact
+
+The reports and dashboards transform operational data into meaningful insights. They help managers monitor team performance, identify overdue requests, track company assets, and make informed decisions based on real-time information.
+
+By using Salesforce reporting tools, the organisation gains greater visibility into its IT operations while improving efficiency, accountability, and service quality.
